@@ -23,6 +23,33 @@ void multiArray()
 	}
 }
 
+void multiArrayTwo()
+{
+	const int CITY = 2, WEEK = 7;
+
+	int temperature[CITY][WEEK];
+	cout << "Enter Temperature for a week of first city and then second city. " << endl;
+
+	for (int i = 0; i < CITY; ++i)
+	{
+		for (int j = 0; j < WEEK; ++j)
+		{
+			cout << "City " << i + 1 << ", Day " << j + 1 << " : ";
+			cin >> temperature[i][j];
+		}
+	}
+
+	cout << endl << endl << "Displaying Values: " << endl;
+
+	for (int i = 0; i < CITY; ++i)
+	{
+		for (int j = 0; j < WEEK; ++j)
+		{
+			cout << "City " << i + 1 << ", Day " << j + 1 << " = " << temperature[i][j] << endl;
+		}
+	}
+}
+
 int main()
 {
 	cout << "Arrays!" << endl;
@@ -38,6 +65,7 @@ int main()
 
 	cout << "Sum = " << sum << endl;
 	multiArray();
+	multiArrayTwo();
 
 	return 0;
 
