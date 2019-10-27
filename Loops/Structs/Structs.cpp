@@ -12,24 +12,38 @@ struct Person
 	float salary;
 };
 
+Person getData(Person);
+void displayData(Person);
+
 int main()
 {
     cout << "Structs" << endl;
 
-	Person p1;
-	cout << "Enter full name: ";
-	cin.get(p1.name, 50);
-	cout << "Enter age: ";
-	cin >> p1.age;
-	cout << "Enter salary: ";
-	cin >> p1.salary;
+	Person p;
+	p = getData(p);
 
-	cout << endl << "Displaying Information. " << endl;
-	cout << "Name: " << p1.name << endl;
-	cout << "Age: " << p1.age << endl;
-	cout << "Salary: " << p1.salary;
 
+	displayData(p);
 	return 0;
+}
+
+Person getData(Person p)
+{
+	cout << "Enter full name: ";
+	cin.get(p.name, 50);
+	cout << "Enter age: ";
+	cin >> p.age;
+	cout << "Enter salary: ";
+	cin >> p.salary;
+	return p;
+}
+
+void displayData(Person p)
+{
+	cout << endl << "Displaying Information. " << endl;
+	cout << "Name: " << p.name << endl;
+	cout << "Age: " << p.age << endl;
+	cout << "Salary: " << p.salary;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
