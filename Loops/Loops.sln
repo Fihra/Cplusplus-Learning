@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Loops", "Loops\Loops.vcxproj", "{DF082730-157D-4E5D-AA97-D3E1B00E6A2E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "switchcase", "switchcase\switchcase.vcxproj", "{53EF223E-9150-463A-AB15-0AF30A283586}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{DF082730-157D-4E5D-AA97-D3E1B00E6A2E}.Release|x64.Build.0 = Release|x64
 		{DF082730-157D-4E5D-AA97-D3E1B00E6A2E}.Release|x86.ActiveCfg = Release|Win32
 		{DF082730-157D-4E5D-AA97-D3E1B00E6A2E}.Release|x86.Build.0 = Release|Win32
+		{53EF223E-9150-463A-AB15-0AF30A283586}.Debug|x64.ActiveCfg = Debug|x64
+		{53EF223E-9150-463A-AB15-0AF30A283586}.Debug|x64.Build.0 = Debug|x64
+		{53EF223E-9150-463A-AB15-0AF30A283586}.Debug|x86.ActiveCfg = Debug|Win32
+		{53EF223E-9150-463A-AB15-0AF30A283586}.Debug|x86.Build.0 = Debug|Win32
+		{53EF223E-9150-463A-AB15-0AF30A283586}.Release|x64.ActiveCfg = Release|x64
+		{53EF223E-9150-463A-AB15-0AF30A283586}.Release|x64.Build.0 = Release|x64
+		{53EF223E-9150-463A-AB15-0AF30A283586}.Release|x86.ActiveCfg = Release|Win32
+		{53EF223E-9150-463A-AB15-0AF30A283586}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
