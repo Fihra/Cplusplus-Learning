@@ -20,6 +20,31 @@ int add(int a, int b)
 	return add;
 }
 
+void prime()
+{
+	int num, flag = 0;
+	cout << "Enter a positive integer enter to check: ";
+	cin >> num;
+
+	for (int i = 2; i <= num / 2; i++)
+	{
+		if (num % i == 0)
+		{
+			flag = 1;
+			break;
+		}
+	}
+
+	if (flag == 1)
+	{
+		cout << num << " is not a prime number.";
+	}
+	else
+	{
+		cout << num << " is a prime number.";
+	}
+}
+
 
 int main()
 {
@@ -33,6 +58,7 @@ int main()
 	sum = add(num1, num2);
 	cout << "Sum = " << sum;
 
+	prime();
 	return 0;
 }
 
