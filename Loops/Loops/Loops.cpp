@@ -33,7 +33,42 @@ int main()
 		sum += num;
 	} while (num != 0.0);
 
-	cout << "Total sum = " << sum;
+	cout << "Total sum = " << sum << endl;
+
+	cout << "---------------------------" << endl;
+	cout << "While with Break" << endl;
+
+	float num2, sum2 = 0.0;
+
+	while (true)
+	{
+		cout << "Enter a number: ";
+		cin >> num2;
+
+		if (num2 != 0.0)
+		{
+			sum += num2;
+		}
+		else
+		{
+			break;
+		}
+	}
+
+	cout << "Sum = " << sum << endl;
+
+	cout << "--------------------" << endl;
+
+	cout << "For with COntinue" << endl;
+
+	for (int i = 1; i <= 10; i++)
+	{
+		if (i == 6 || i == 9)
+		{
+			continue;
+		}
+		cout << i << "\t";
+	}
 
 	return 0;
 }
