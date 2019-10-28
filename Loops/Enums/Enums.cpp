@@ -6,29 +6,40 @@
 using namespace std;
 
 enum week { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
+enum season { spring = 0, summer = 4, autumn = 8, winter = 12 };
+enum designFlags {
+	ITALICS = 1,
+	BOLD = 2,
+	UNDERLINE = 4
+};	
+
+void showSeason()
+{
+	season timely;
+	timely = summer;
+	cout << endl << "Season: " << timely;
+}
 
 void display() 
 {
 	week today;
 	today = Wednesday;
-	cout << "Day " << today + 1;
+	cout << endl << "Day " << today + 1;
+}
+
+void chooseFlag()
+{
+	int myDesign = BOLD | UNDERLINE;
+	cout << endl << myDesign;
 }
 
 int main()
 {
 	cout << "Enumeration" << endl;
 	display();
+	showSeason();
+	chooseFlag();
 
 	return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
